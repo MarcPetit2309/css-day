@@ -1,0 +1,50 @@
+p {
+    color: red;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    width: 300px;
+    margin: 20px 10px 10px 30px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: seagreen;
+    border: 2px white solid;
+}
+
+.static {
+    background-color: blue;
+    position: static;
+}
+
+.relative {
+    background-color: red;
+    position: relative;
+    left: 50px;
+    z-index: 10;
+}
+
+.absolute {
+    background-color: teal;
+    position: absolute;
+    left: 20px;
+    top: 530px;
+    z-index: 0;
+}
+
+.sticky {
+    background-color: rebeccapurple;
+    position: sticky;
+    top: 10px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0px;
+}
+
+#id {
+
+}
