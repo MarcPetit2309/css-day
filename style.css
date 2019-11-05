@@ -1,50 +1,116 @@
-p {
-    color: red;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+      color: white;
+      text-decoration: none;
+  } 
+  
+  
+  /* ---- typography ---- */
+  
+  body {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
-    width: 300px;
-    margin: 20px 10px 10px 30px;
-}
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: seagreen;
-    border: 2px white solid;
-}
+  }
 
-.static {
-    background-color: blue;
-    position: static;
-}
-
-.relative {
-    background-color: red;
+  h2 {
+    color: white;
+  }
+    
+  p {
+    margin: 0;
+  }
+  
+  
+  
+  /* ---- layout ---- */
+  
+  #site-header {
+    padding: 30px 0;
+    color: white;
+    background: #111;
+  }
+  
+  #site-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+  #site-main {
+    margin-bottom: 60px;
+  }
+  
+  .container {
+    margin: 0 20px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  h2 {
     position: relative;
-    left: 50px;
-    z-index: 10;
+    top: -50px;
+  }
+  
+  
+  /* ---- components ---- */
+  
+  .button {
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .button-alt {
+    color: blue;
+    background-color: #fff;
+  }
+  
+
+
+  /* ---- section ---- */
+  article {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.absolute {
-    background-color: teal;
-    position: absolute;
-    left: 20px;
-    top: 530px;
-    z-index: 0;
-}
+  article img {
+    width: 100%;
+  }
 
-.sticky {
-    background-color: rebeccapurple;
-    position: sticky;
-    top: 10px;
-}
+  article .link {
+    background-color: #ccc;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
 
-.fixed {
-    position: fixed;
-    bottom: 0px;
-}
-
-#id {
-
-}
+  article .link:hover {
+      background-color: grey;
+      color: white;
+  }
